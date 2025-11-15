@@ -1,0 +1,22 @@
+{
+  "name": "giftbox-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo for the GiftBox / MagicGifts application (client + server).",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter client dev\" \"pnpm --filter server dev\"",
+    "build": "pnpm -r run build",
+    "start": "pnpm --filter server start",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test"
+  },
+  "engines": {
+    "node": ">=18.18.0",
+    "pnpm": ">=8.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
