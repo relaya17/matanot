@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useAppSelector } from '../store/hooks';
 

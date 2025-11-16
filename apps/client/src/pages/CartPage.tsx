@@ -1,14 +1,14 @@
 import { Container, Button, Row, Col, Card, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../store/hooks';
-import { removeFromCart, updateQuantity } from '../store/slices/cartSlice';
+import { removeItem, updateQuantity } from '../store/slices/cartSlice';
 
 const CartPage = () => {
   const cart = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
 
   const handleRemove = (productId: string) => {
-    dispatch(removeFromCart(productId));
+    dispatch(removeItem(productId));
   };
 
   const handleQuantityChange = (productId: string, quantity: number) => {

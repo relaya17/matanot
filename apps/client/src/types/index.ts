@@ -26,6 +26,7 @@ export interface CartItem {
   title: string;
   price: number;
   quantity: number;
+  image?: string;
   selectedOptions?: Record<string, string>;
   note?: string;
 }
