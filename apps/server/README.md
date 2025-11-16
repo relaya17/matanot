@@ -87,6 +87,6 @@ src/
 - TypeScript
 - MongoDB + Mongoose
 - JWT Authentication
-- bcrypt
+- bcryptjs
 - Joi validation
 
